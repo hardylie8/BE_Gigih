@@ -4,7 +4,7 @@ For the mid-term project in Generasi Gigih 3.0, the goal is to create an interac
 
 ## Database Structure
 
-![Alt text](/mid_term/readmeAsset/Untitled.png)
+![Alt text](/readmeAsset/Untitled.png)
 
 Reference inside the database
 
