@@ -1,6 +1,8 @@
 # Gigih play
 
-For the mid-term project in Generasi Gigih 3.0, the goal is to create an interactive live shopping platform that enables users to engage in live shopping events, explore a variety of products, and actively participate by posting comments during the live sessions.
+For the final project in Generasi Gigih 3.0, the goal is to create an interactive live shopping platform that enables users to engage in live shopping events, explore a variety of products, and actively participate by posting comments during the live sessions. this is the backend repository.
+
+kindly check https://github.com/hardylie8/FE_Gigih for the Frontend.
 
 ## Tech Stack
 
