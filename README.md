@@ -473,5 +473,6 @@ Creates a new Comment and returns the new object.
 }
 ```
 
-**Contact**
+## Contact
+
 For any questions or issues, please feel free to reach out to me at [hardyliyanto@gmail.com](mailto:hardyliyanto@gmail.com).
