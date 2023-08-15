@@ -6,10 +6,10 @@ kindly check https://github.com/hardylie8/FE_Gigih for the Frontend.
 
 ## Tech Stack
 
-Express.js
-Node.js
-MongoDb
-Socket.io
+- Express.js
+- Node.js
+- MongoDb
+- Socket.io
 
 ## Database Structure
 
