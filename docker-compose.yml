@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  gigihplay:
+    container_name: "gigihplay"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: on-failure
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+    environment:
+      - APP_PORT=3000
+      - DATABASE_NAME=gigihplay
+      - DATABASE_URL=mongodb://mongodb:27017/
+
+  mongodb:
+    container_name: "gigihplay-db"
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    volumes:
+      - gigihplay-db-vol:/data/db
+    restart: always
+volumes:
+  gigihplay-db-vol:

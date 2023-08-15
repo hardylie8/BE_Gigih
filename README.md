@@ -36,8 +36,10 @@ Install dependencies
 
 Copy/rename .env.example to .env fill the value
 
+seed the database
+
 ```bash
-  npm install
+  npm run seed
 ```
 
 Start the server
