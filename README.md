@@ -2,6 +2,13 @@
 
 For the mid-term project in Generasi Gigih 3.0, the goal is to create an interactive live shopping platform that enables users to engage in live shopping events, explore a variety of products, and actively participate by posting comments during the live sessions.
 
+## Tech Stack
+
+Express.js
+Node.js
+MongoDb
+Socket.io
+
 ## Database Structure
 
 ![Alt text](/readmeAsset/Untitled.png)
@@ -19,13 +26,13 @@ Reference inside the database
 Clone the project
 
 ```bash
-  git clone https://github.com/hardylie8/Generasi_gigih_3.0.git
+  git clone https://github.com/hardylie8/BE_Gigih.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd Generasi_gigih_3.0/mid_term
+  cd Generasi_gigih_3.0/BE_Gigih
 ```
 
 Install dependencies
@@ -46,6 +53,32 @@ Start the server
 
 ```bash
   npm run dev
+```
+
+## Run Locally via docker
+
+Clone the project
+
+```bash
+  git clone https://github.com/hardylie8/BE_Gigih.git
+```
+
+Go to the project directory
+
+```bash
+  cd Generasi_gigih_3.0/BE_Gigih
+```
+
+Compose Docker Container and wait until done
+
+```bash
+  docker-compose -f docker-compose.yml up --build -d
+```
+
+## pull the docker image
+
+```bash
+  docker pull rd117/gigih-lab-be:1.0
 ```
 
 ## Api Structure
