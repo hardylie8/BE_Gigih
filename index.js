@@ -7,6 +7,9 @@ const app = express();
 const httpServer = createServer(app);
 const { Server } = require("socket.io");
 
+const client_url = process.env.CLIENT_URL
+  ? process.env.CLIENT_URL
+  : "http://localhost:4173";
 const videoRoute = require("./routes/VideoRoute");
 const commentRoute = require("./routes/CommentRoute");
 const productRoute = require("./routes/ProductRoute");
@@ -14,10 +17,11 @@ const authRoute = require("./routes/AuthRoute");
 const userRoute = require("./routes/UserRoute");
 const connectDB = require("./config/mongo");
 const cors = require("cors");
+
 connectDB();
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: client_url,
     method: ["GET", "POST"],
   },
 });
